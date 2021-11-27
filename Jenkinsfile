@@ -8,9 +8,8 @@ pipeline {
         }
         stage('compile') {
             steps {
-                 'mvn install'
+                sh 'mvn install'
             }
         }
     }
 }
-
