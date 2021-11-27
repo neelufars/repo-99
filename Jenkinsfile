@@ -6,9 +6,9 @@ pipeline {
                 git branch: "main", url: 'https://github.com/neelufars/repo-99.git'
             }
         }
-        stage('Build') {
+        stage('compile') {
             steps {
-                sh 'code compile'
+                sh 'mvn install'
             }
         }
     }
